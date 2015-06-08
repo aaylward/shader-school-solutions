@@ -10,9 +10,6 @@ bool insideCircle(vec4 point, vec2 center, float radius) {
 }
 
 void main() {
-
-  //TODO: Replace this with a function that draws a circle at (256.5,256.5) with radius 128
-  
   if (insideCircle(gl_FragCoord, CENTER, RADIUS)) {
     gl_FragColor = CIRCLE_COLOR;
   } else {
