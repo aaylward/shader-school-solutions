@@ -6,7 +6,7 @@ precision highp float;
 #define RADIUS          128.0
 
 bool insideCircle(vec4 point, vec2 center, float radius) {
-  return length(vec2(point.x - center.x, point.y - center.y)) < radius;
+  return length(point.xy - center) < radius;
 }
 
 void main() {
